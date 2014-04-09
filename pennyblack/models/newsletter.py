@@ -231,7 +231,6 @@ class NewsletterAdmin(item_editor.ItemEditor, admin.ModelAdmin):
             'fields': ['name', 'subject', 'sender', 'reply_email', 'template_key'],
         }),
         (_('Other options'), {
-            'classes': ['collapse',],
             'fields': ('newsletter_type', 'language', 'utm_source','utm_medium', 'header_image', 'header_url', 'site'),
         }),
         item_editor.FEINCMS_CONTENT_FIELDSET,
