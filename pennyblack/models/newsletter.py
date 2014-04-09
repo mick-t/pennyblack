@@ -10,7 +10,8 @@ from django.db.models import signals
 from django.utils import translation
 from django.utils.translation import ugettext_lazy as _
 
-from feincms.admin import editor
+# gone from feincms 1.9.+
+# from feincms.admin import editor
 from feincms.admin import item_editor
 from feincms.management.checker import check_database_schema
 from feincms.models import Base
