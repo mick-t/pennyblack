@@ -1,0 +1,2 @@
+# minimum feincms version:
+FeinCMS>=1.8
