@@ -223,7 +223,7 @@ class Newsletter(Base):
 Newsletter.__module__ = 'pennyblack.models'    
 signals.post_syncdb.connect(check_database_schema(Newsletter, __name__), weak=False)
 
-class NewsletterAdmin(editor.ItemEditor, admin.ModelAdmin):
+class NewsletterAdmin(item_editor.ItemEditor, admin.ModelAdmin):
     list_display = ('name', 'subject', 'language', 'newsletter_type')
     raw_id_fields = ('header_image',)
     fieldsets = (
